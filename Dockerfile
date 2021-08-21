@@ -11,7 +11,7 @@ RUN cat ./config.yaml
 
 RUN go mod tidy
 
-RUN go env && go build
+RUN go env && go build -o main ./main.go
 
 FROM alpine:latest
 LABEL MAINTAINER="wwwwangg@163.com"
