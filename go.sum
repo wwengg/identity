@@ -526,6 +526,8 @@ github.com/wwengg/arsenal v0.0.2-0.20210819145759-10fa117d2c2f h1:jMkHVadY/8OYAa
 github.com/wwengg/arsenal v0.0.2-0.20210819145759-10fa117d2c2f/go.mod h1:S1/iKLjhFQf5Btz5nLig2r95r/vZBFu+b1L4QS7BBac=
 github.com/wwengg/arsenal v0.0.2-0.20210821031928-c99ce579fed0 h1:Pp++eJtJ7aRgCMNBCis1ZCE32J1NbAXvSxBxY/X3668=
 github.com/wwengg/arsenal v0.0.2-0.20210821031928-c99ce579fed0/go.mod h1:CuHuDlGPNIdRzf3fNj2USdhQwTBuAz4B1bDHNVHdUoc=
+github.com/wwengg/arsenal v0.0.2-0.20210821043455-0c1717c8540b h1:m6lkGBx5clCICAH4JzmlSN+8n2tvUYgFEUBj2QpXnLk=
+github.com/wwengg/arsenal v0.0.2-0.20210821043455-0c1717c8540b/go.mod h1:CuHuDlGPNIdRzf3fNj2USdhQwTBuAz4B1bDHNVHdUoc=
 github.com/wwengg/proto v0.0.0-20210819145950-bbea7c4cdb06 h1:aS5Jrx1QCxAPKf5jCd7qmdhLUjP69HKLusR90DEEcl8=
 github.com/wwengg/proto v0.0.0-20210819145950-bbea7c4cdb06/go.mod h1:v5WQ2uUYWkvGcu6aJGwDvup+MPyAETqDUV97k6p3HyM=
 github.com/wwengg/proto v0.0.0-20210821031700-75b2f457e200/go.mod h1:v5WQ2uUYWkvGcu6aJGwDvup+MPyAETqDUV97k6p3HyM=
