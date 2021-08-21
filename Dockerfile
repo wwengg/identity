@@ -26,4 +26,4 @@ RUN apk add --no-cache  gettext tzdata   && \
 
 WORKDIR /go/src/server
 COPY --from=0 /go/src/server/main ./
-COPY --from=0 /go/src/server/config.yaml ./
+COPY --from=0 /go/src/server/config.yaml ./config
