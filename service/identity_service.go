@@ -62,7 +62,6 @@ func (s *IdentityService) GetId(ctx context.Context, args common.Empty, reply *i
 	*reply = identity.GetIdReply{
 		Id: s.node.Generate(),
 	}
-	err = GetErr(MapErrMsgZH, common.EnumErr_JoinRoomErr)
 	return
 }
 
@@ -71,6 +70,6 @@ func (s *IdentityService) GetIds(ctx context.Context, args identity.GetIdsArgs, 
 	*reply = identity.GetIdsReply{
 		Ids: s.node.GenerateBatch(uint16(args.Num)),
 	}
-
+	err = GetErr(MapErrMsgZH, common.EnumErr_JoinRoomErr)
 	return nil
 }
