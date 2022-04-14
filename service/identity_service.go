@@ -8,7 +8,6 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/smallnest/rpcx/share"
 	"github.com/wwengg/proto/common"
 	"github.com/wwengg/proto/identity"
 
@@ -63,10 +62,8 @@ func (s *IdentityService) GetId(ctx context.Context, args common.Empty, reply *i
 	*reply = identity.GetIdReply{
 		Id: s.node.Generate(),
 	}
-	var data = make(map[string]string)
-	data["code"] = "200"
-	ctx = context.WithValue(ctx, share.ResMetaDataKey, data)
-	return nil
+	err = GetErr(MapErrMsgZH, common.EnumErr_JoinRoomErr)
+	return
 }
 
 // GetIds is server rpc method as defined
