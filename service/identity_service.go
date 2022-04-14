@@ -34,8 +34,18 @@ type IdentityService struct {
 	node     *snowflake.Node
 }
 
+type IdentityAble interface {
+	// IdentityAble can be used for interface verification.
+
+	// GetId is server rpc method as defined
+	GetId(ctx context.Context, args common.Empty, reply *identity.GetIdReply) (err error)
+
+	// GetIds is server rpc method as defined
+	GetIds(ctx context.Context, args identity.GetIdsArgs, reply *identity.GetIdsReply) (err error)
+}
+
 // NewSnowFlake created a new SnowFlake with given configs.
-func NewSnowFlake(serverID int64, epoch int64, nodeBits, stepBits uint8) identity.IdentityAble {
+func NewSnowFlake(serverID int64, epoch int64, nodeBits, stepBits uint8) IdentityAble {
 	node, err := snowflake.NewNode(serverID, epoch, nodeBits, stepBits)
 	if err != nil {
 		panic("can't create snowflake node: " + err.Error())
@@ -48,7 +58,7 @@ func NewSnowFlake(serverID int64, epoch int64, nodeBits, stepBits uint8) identit
 }
 
 // GetId is server rpc method as defined
-func (s *IdentityService) GetId(ctx context.Context, args *common.Empty, reply *identity.GetIdReply) (err error) {
+func (s *IdentityService) GetId(ctx context.Context, args common.Empty, reply *identity.GetIdReply) (err error) {
 	*reply = identity.GetIdReply{
 		Id: s.node.Generate(),
 	}
@@ -56,7 +66,7 @@ func (s *IdentityService) GetId(ctx context.Context, args *common.Empty, reply *
 }
 
 // GetIds is server rpc method as defined
-func (s *IdentityService) GetIds(ctx context.Context, args *identity.GetIdsArgs, reply *identity.GetIdsReply) (err error) {
+func (s *IdentityService) GetIds(ctx context.Context, args identity.GetIdsArgs, reply *identity.GetIdsReply) (err error) {
 	*reply = identity.GetIdsReply{
 		Ids: s.node.GenerateBatch(uint16(args.Num)),
 	}

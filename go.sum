@@ -530,6 +530,7 @@ github.com/wwengg/arsenal v0.0.2-0.20210821043455-0c1717c8540b h1:m6lkGBx5clCICA
 github.com/wwengg/arsenal v0.0.2-0.20210821043455-0c1717c8540b/go.mod h1:CuHuDlGPNIdRzf3fNj2USdhQwTBuAz4B1bDHNVHdUoc=
 github.com/wwengg/proto v0.0.0-20210819145950-bbea7c4cdb06 h1:aS5Jrx1QCxAPKf5jCd7qmdhLUjP69HKLusR90DEEcl8=
 github.com/wwengg/proto v0.0.0-20210819145950-bbea7c4cdb06/go.mod h1:v5WQ2uUYWkvGcu6aJGwDvup+MPyAETqDUV97k6p3HyM=
+github.com/wwengg/proto v0.0.0-20210821031700-75b2f457e200 h1:Q2+xekIx4imNYg2nJPRHDNreLlee7Lk9LWxFJzZ8Ib4=
 github.com/wwengg/proto v0.0.0-20210821031700-75b2f457e200/go.mod h1:v5WQ2uUYWkvGcu6aJGwDvup+MPyAETqDUV97k6p3HyM=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/xtaci/kcp-go v5.4.20+incompatible h1:TN1uey3Raw0sTz0Fg8GkfM0uH3YwzhnZWQ1bABv5xAg=
