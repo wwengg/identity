@@ -71,5 +71,5 @@ func (s *IdentityService) GetIds(ctx context.Context, args identity.GetIdsArgs, 
 		Ids: s.node.GenerateBatch(uint16(args.Num)),
 	}
 	err = GetErr(MapErrMsgZH, common.EnumErr_JoinRoomErr)
-	return nil
+	return err
 }
